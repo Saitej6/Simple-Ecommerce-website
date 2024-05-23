@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Detail</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Footwear Products</h2>
+        
+        <section class="product">
+            <h3>Footwear 1: Nike Air Max</h3>
+            <p>The Nike Air Max features a comfortable fit with its iconic air cushioning, perfect for running and casual wear.</p>
+            <p>Price: Rs 10,000/-</p>
+            <button onclick="addToCart('Nike Air Max')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Footwear 2: Adidas Ultraboost</h3>
+            <p>Experience ultimate comfort and performance with Adidas Ultraboost, designed for high energy return and style.</p>
+            <p>Price: Rs 12,000/-</p>
+            <button onclick="addToCart('Adidas Ultraboost')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Footwear 3: Puma RS-X</h3>
+            <p>The Puma RS-X combines retro design with modern technology, offering a bold look and excellent cushioning.</p>
+            <p>Price: Rs 8,000/-</p>
+            <button onclick="addToCart('Puma RS-X')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Footwear 4: Reebok Classic Leather</h3>
+            <p>Reebok Classic Leather provides timeless style and all-day comfort, perfect for any casual outfit.</p>
+            <p>Price: Rs 7,000/-</p>
+            <button onclick="addToCart('Reebok Classic Leather')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Footwear 5: Under Armour HOVR Phantom</h3>
+            <p>Under Armour HOVR Phantom offers a zero-gravity feel to maintain energy return and reduce impact.</p>
+            <p>Price: Rs 9,000/-</p>
+            <button onclick="addToCart('Under Armour HOVR Phantom')">Add to Cart</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; eCommerce</p>
+    </footer>
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' added to cart!');
+        }
+    </script>
+</body>
+</html>

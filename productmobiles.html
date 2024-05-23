@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Detail</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Mobile Products</h2>
+        
+        <section class="product">
+            <h3>Mobile 1: Samsung Galaxy S21</h3>
+            <p>Experience the new Samsung Galaxy S21 with a 6.2-inch display, 64MP camera, and 4000mAh battery.</p>
+            <p>Price: Rs 70,000/-</p>
+            <button onclick="addToCart('Samsung Galaxy S21')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Mobile 2: iPhone 13</h3>
+            <p>Discover the iPhone 13 with its A15 Bionic chip, 6.1-inch Super Retina XDR display, and 12MP dual-camera system.</p>
+            <p>Price: Rs 80,000/-</p>
+            <button onclick="addToCart('iPhone 13')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Mobile 3: OnePlus 9 Pro</h3>
+            <p>Meet the OnePlus 9 Pro, featuring a 6.7-inch Fluid AMOLED display, 48MP quad-camera setup, and 4500mAh battery.</p>
+            <p>Price: Rs 65,000/-</p>
+            <button onclick="addToCart('OnePlus 9 Pro')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Mobile 4: Google Pixel 6</h3>
+            <p>The Google Pixel 6 offers a 6.4-inch OLED display, Google Tensor processor, and 50MP camera for stunning photos.</p>
+            <p>Price: Rs 60,000/-</p>
+            <button onclick="addToCart('Google Pixel 6')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Mobile 5: Xiaomi Mi 11 Ultra</h3>
+            <p>Introducing the Xiaomi Mi 11 Ultra with a 6.81-inch AMOLED display, 50MP triple-camera system, and 5000mAh battery.</p>
+            <p>Price: Rs 75,000/-</p>
+            <button onclick="addToCart('Xiaomi Mi 11 Ultra')">Add to Cart</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; eCommerce</p>
+    </footer>
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' added to cart!');
+        }
+    </script>
+</body>
+</html>

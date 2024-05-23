@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+            <input type="submit" value="Login">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Ecommerce</p>
+    </footer>
+
+    <script>
+        var users = [
+            { username: "gopi", password: "password1" },
+            { username: "kiran", password: "password2" },
+            { username: "amruth", password: "password3" },
+            { username: "manoj", password: "password4" },
+            { username: "mani", password: "password5" },
+            { username: "nani", password: "password6" },
+            { username: "uday", password: "password7" },
+            { username: "sai", password:"sai1" },
+            { username: "nuthan", password: "nuthan1" },
+            { username: "vinod", password: "vinod1"  },
+            
+        ];
+
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            var authenticatedUser = users.find(function(user) {
+                return user.username === username && user.password === password;
+            });
+
+            if (authenticatedUser) {
+                alert("Login successful");
+                window.location.href = "index.html"; e
+            } else {
+                alert("Invalid username or password");
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    /* margin: 0;
+    padding: 0; */
+    /* background-color: #f4f4f4; */
+    background-image: url("https://imgs.search.brave.com/UzgK9KQzRcnBdKyPe_NNvki54ziIbRgxk_oGFp64gD8/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93YWxs/cGFwZXJjYXZlLmNv/bS93cC93cDM1Mzc1/NDEuanBn");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header, footer {
+    /* background: #333; */
+    color: #2b0e47; 
+    text-align: center; 
+    /* padding: 10px 0; */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #3c0ea1; 
+    text-decoration: aerial;
+}
+
+main {
+    padding: 20px;
+    /* background: #fff; */  
+}
+
+.product {
+    /* border: 1px solid #ddd; */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    /* background-color: #23728d; */
+    /* color: white; */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18ccab;
+}

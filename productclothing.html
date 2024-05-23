@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Product Detail</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Clothing and Fashion Products</h2>
+        
+        <section class="product">
+            <h3>Product 1: Casual T-Shirt</h3>
+            <p>Stay comfortable with our 100% cotton casual t-shirt, perfect for everyday wear.</p>
+            <p>Price: Rs 500/-</p>
+            <button onclick="addToCart('Casual T-Shirt')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Product 2: Denim Jeans</h3>
+            <p>Our classic denim jeans are durable and stylish, suitable for all occasions.</p>
+            <p>Price: Rs 1,200/-</p>
+            <button onclick="addToCart('Denim Jeans')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Product 3: Summer Dress</h3>
+            <p>Feel the breeze with our lightweight summer dress, available in various colors.</p>
+            <p>Price: Rs 1,800/-</p>
+            <button onclick="addToCart('Summer Dress')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Product 4: Leather Jacket</h3>
+            <p>Our premium leather jacket offers a sleek look and ultimate comfort.</p>
+            <p>Price: Rs 5,000/-</p>
+            <button onclick="addToCart('Leather Jacket')">Add to Cart</button>
+        </section>
+        
+        <section class="product">
+            <h3>Product 5: Sports Shoes</h3>
+            <p>Achieve peak performance with our high-quality sports shoes, designed for all sports.</p>
+            <p>Price: Rs 2,500/-</p>
+            <button onclick="addToCart('Sports Shoes')">Add to Cart</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; eCommerce</p>
+    </footer>
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' added to cart!');
+        }
+    </script>
+</body>
+</html>
